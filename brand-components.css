@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@600;700&family=Figtree:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&display=swap");
+
+/* Da Gherardo components. Every colour comes from tokens.css. */
+
+body { background: var(--crema); color: var(--inchiostro); font-family: var(--font-sans); font-size: 17px; line-height: 28px; margin: 0; }
+
+/* Type */
+.dg-eyebrow { font-family: var(--font-label); font-size: 15px; line-height: 18px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--rosso-text); margin: 0; }
+.dg-display { font-family: var(--font-display); font-weight: 400; line-height: .96; letter-spacing: -.005em; margin: 0; text-wrap: balance; }
+.dg-display em { font-style: italic; color: var(--rosso-text); }
+.dg-display--l { font-size: clamp(44px, 6vw, 84px); }
+.dg-display--xl { font-size: clamp(64px, 10vw, 144px); line-height: .9; }
+.dg-display--m { font-size: 40px; line-height: 1.05; }
+.dg-label { font-family: var(--font-label); font-weight: 600; font-size: 30px; line-height: 1; letter-spacing: .03em; text-transform: uppercase; color: var(--rosso-text); margin: 0; }
+.dg-lede { font-size: 21px; line-height: 31px; max-width: 42ch; margin: 0; }
+.dg-small { font-size: 15px; line-height: 22px; color: var(--inchiostro-muted); }
+
+/* Buttons: pills */
+.dg-btn { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-label); font-weight: 600; font-size: 16px; line-height: 18px; letter-spacing: .1em; text-transform: uppercase; padding: 16px 28px; border-radius: 999px; border: 2px solid var(--rosso); background: var(--rosso); color: var(--on-rosso); text-decoration: none; cursor: pointer; -webkit-tap-highlight-color: transparent; transition: background .2s, color .2s, transform .2s; }
+.dg-btn:hover { background: var(--vino); border-color: var(--vino); }
+.dg-btn:active { transform: translateY(1px); }
+.dg-btn:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
+.dg-btn--ghost { background: transparent; color: var(--inchiostro); border-color: var(--inchiostro); }
+.dg-btn--ghost:hover { background: var(--inchiostro); color: var(--crema); border-color: var(--inchiostro); }
+.dg-btn--crema { background: var(--on-rosso); color: var(--rosso); border-color: var(--on-rosso); }
+.dg-btn--crema:hover { background: transparent; color: var(--on-rosso); border-color: var(--on-rosso); }
+.dg-btn--outline-crema { background: transparent; color: var(--on-rosso); border-color: var(--on-rosso); }
+.dg-btn--outline-crema:hover { background: var(--on-rosso); color: var(--rosso); }
+.dg-on-red .dg-btn:focus-visible, .dg-poster .dg-btn:focus-visible { outline-color: var(--on-rosso); }
+.dg-row { display: flex; flex-wrap: wrap; gap: 24px; align-items: center; }
+
+/* Section header */
+.dg-head { display: grid; gap: 8px; max-width: 62ch; }
+.dg-head .dg-lede { margin-top: 16px; }
+
+/* Poster: the big red moment */
+.dg-poster { position: relative; background: var(--rosso); color: var(--on-rosso); overflow: hidden; }
+.dg-poster--vino { background: var(--vino); }
+.dg-poster__word { font-family: var(--font-display); font-weight: 400; font-size: clamp(96px, 17vw, 260px); line-height: .86; letter-spacing: -.015em; color: var(--on-rosso); margin: 0; }
+.dg-poster__word em { font-style: italic; }
+.dg-poster--vino .dg-poster__word em { color: var(--senape); }
+.dg-corner { position: absolute; font-family: var(--font-label); font-weight: 600; font-size: 14px; letter-spacing: .14em; text-transform: uppercase; color: var(--on-rosso); }
+
+/* Tenda: the awning edge over the piazza tables (stripes + scallops) */
+.dg-tenda { height: 56px; background: repeating-linear-gradient(90deg, var(--rosso) 0 48px, var(--bianco) 48px 96px);
+  -webkit-mask: linear-gradient(#000 0 0) top / 100% 32px no-repeat, radial-gradient(circle at 50% 0, #000 24px, transparent 24.5px) 0 32px / 48px 24px repeat-x;
+          mask: linear-gradient(#000 0 0) top / 100% 32px no-repeat, radial-gradient(circle at 50% 0, #000 24px, transparent 24.5px) 0 32px / 48px 24px repeat-x; }
+.dg-tenda--sm { height: 28px; background-size: auto; background: repeating-linear-gradient(90deg, var(--rosso) 0 24px, var(--bianco) 24px 48px);
+  -webkit-mask: linear-gradient(#000 0 0) top / 100% 16px no-repeat, radial-gradient(circle at 50% 0, #000 12px, transparent 12.5px) 0 16px / 24px 12px repeat-x;
+          mask: linear-gradient(#000 0 0) top / 100% 16px no-repeat, radial-gradient(circle at 50% 0, #000 12px, transparent 12.5px) 0 16px / 24px 12px repeat-x; }
+
+/* Ellisse: a photo cut to the oval of Piazza Anfiteatro, with a double ink ring */
+.dg-ellisse { position: relative; aspect-ratio: 4 / 3; max-width: 100%; }
+.dg-ellisse__photo { position: absolute; inset: 7%; border-radius: 50%; overflow: hidden; }
+.dg-ellisse__photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.dg-ellisse__ring { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.dg-ellisse__ring ellipse { fill: none; stroke: var(--ring, var(--inchiostro)); stroke-width: 1.5; }
+.dg-ellisse__ring text { font-family: var(--font-label); font-weight: 600; font-size: 15px; letter-spacing: .24em; fill: var(--ring, var(--inchiostro)); text-transform: uppercase; }
+
+/* Cartolina: a postcard photo with white border, a tilt and a stamp */
+.dg-cartolina { position: relative; display: inline-block; background: var(--bianco); padding: 12px 12px 44px; box-shadow: var(--shadow-cartolina); transform: rotate(var(--tilt, -2deg)); }
+.dg-cartolina img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 2px; }
+.dg-cartolina figcaption { position: absolute; left: 14px; right: 14px; bottom: 10px; font-family: var(--font-display); font-style: italic; font-size: 22px; line-height: 26px; color: var(--on-senape); }
+.dg-francobollo { position: absolute; top: -14px; right: -14px; width: 60px; height: 72px; background: var(--senape); color: var(--on-senape); display: grid; place-items: center; text-align: center; font-family: var(--font-label); font-weight: 700; font-size: 13px; line-height: 14px; letter-spacing: .08em; text-transform: uppercase; transform: rotate(6deg); outline: 4px dotted var(--bianco); outline-offset: -2px; }
+.dg-francobollo--cielo { background: var(--cielo); }
+
+/* Menu card: the printed menu, double red rule */
+.dg-menu { position: relative; background: var(--carta); padding: 40px; box-shadow: inset 0 0 0 1px var(--rosso); }
+.dg-menu::before { content: ""; position: absolute; inset: 7px; border: 1px dotted var(--rosso); pointer-events: none; }
+.dg-tabs { display: flex; flex-wrap: wrap; gap: 4px 28px; margin: 0 0 28px; padding: 0; list-style: none; border-bottom: 1px solid var(--filo); }
+.dg-tab { font-family: var(--font-label); font-weight: 600; font-size: 16px; letter-spacing: .1em; text-transform: uppercase; color: var(--inchiostro-muted); background: none; border: 0; padding: 0 0 12px; margin-bottom: -1px; border-bottom: 2px solid transparent; cursor: pointer; }
+.dg-tab[aria-selected="true"] { color: var(--rosso-text); border-bottom-color: var(--rosso); }
+.dg-tab:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
+.dg-dishes { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); column-gap: 48px; row-gap: 16px; margin: 0; padding: 0; list-style: none; }
+.dg-dish { display: grid; grid-template-columns: 1fr auto; column-gap: 16px; padding-bottom: 16px; border-bottom: 1px solid var(--filo); }
+.dg-dish__name { font-size: 19px; line-height: 26px; font-weight: 500; }
+.dg-dish__price { font-size: 18px; line-height: 26px; font-weight: 600; color: var(--rosso-text); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.dg-dish__desc { grid-column: 1 / -1; font-size: 15px; line-height: 22px; color: var(--inchiostro-muted); }
+.dg-tag { display: inline-block; margin-left: 6px; padding: 1px 8px; border-radius: 999px; background: var(--cielo); color: var(--inchiostro); font-family: var(--font-label); font-weight: 600; font-size: 12px; letter-spacing: .08em; vertical-align: 2px; }
+
+/* Timbro: the round stamp for the gluten-free kitchen */
+.dg-timbro { width: 168px; height: 168px; transform: rotate(-8deg); }
+.dg-timbro circle { fill: none; stroke: var(--rosso-text); }
+.dg-timbro text { font-family: var(--font-label); font-weight: 600; fill: var(--rosso-text); text-transform: uppercase; }
+
+/* Hours and contact card */
+.dg-card { position: relative; background: var(--carta); padding: 32px; box-shadow: inset 0 0 0 1px var(--rosso); }
+.dg-card::before { content: ""; position: absolute; inset: 7px; border: 1px dotted var(--rosso); pointer-events: none; }
+.dg-card dl { display: grid; grid-template-columns: auto 1fr; gap: 10px 24px; margin: 16px 0 0; }
+.dg-card dt { font-family: var(--font-label); font-weight: 600; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: var(--inchiostro-muted); }
+.dg-card dd { margin: 0; }
+.dg-card a { color: var(--rosso-text); text-decoration-thickness: 1px; text-underline-offset: 3px; -webkit-tap-highlight-color: transparent; }
+
+/* Ink drawings: single stroke, like the engraved logo */
+.dg-ink { fill: none; stroke: var(--inchiostro); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.dg-on-red .dg-ink { stroke: var(--on-rosso); }
+
+/* Logo: the engraving, black on paper only */
+.dg-logo { display: block; mix-blend-mode: multiply; }
+.dg-wordmark { display: inline-grid; gap: 2px; text-decoration: none; color: inherit; }
+.dg-wordmark__name { font-family: var(--font-display); font-style: italic; font-size: 34px; line-height: 1; }
+.dg-wordmark__sub { font-family: var(--font-label); font-weight: 600; font-size: 12px; letter-spacing: .26em; text-transform: uppercase; }
+
+@media (prefers-reduced-motion: reduce) { .dg-btn { transition: none; } }

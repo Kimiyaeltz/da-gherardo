@@ -1,0 +1,53 @@
+/* Da Gherardo brand tokens (from brand-tokens.json). The site uses the Giorno (light) theme, like a printed menu. */
+:root {
+  --crema: #fcf7ee;
+  --carta: #f4ead8;
+  --bianco: #fffdf8;
+  --inchiostro: #1f1915;
+  --inchiostro-muted: #62564c;
+  --filo: #e6d9c3;
+  --rosso: #c1141e;
+  --vino: #7a0e16;
+  --rosso-text: #c1141e;
+  --on-rosso: #fcf7ee;
+  --cielo: #bcd6ec;
+  --senape: #eab53e;
+  --on-senape: #1f1915;
+  --focus: #1f1915;
+  --shadow-cartolina: 0 14px 28px rgba(31, 25, 21, 0.18);
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 40px;
+  --space-6: 64px;
+  --space-7: 104px;
+  --header-h: 76px;
+  --tenda-h: 56px;
+  --measure: 62ch;
+  --radius-none: 0;
+  --radius-xs: 2px;
+  --radius-pill: 999px;
+  --radius-ellisse: 50%;
+  --font-display: "Instrument Serif", "Bodoni 72", Didot, Georgia, serif;
+  --font-label: "Antonio", "Oswald", "Arial Narrow", sans-serif-condensed, sans-serif;
+  --font-sans: "Figtree", "Helvetica Neue", Arial, sans-serif;
+  color-scheme: light;
+}
+/* Sera theme tokens, kept for reference; the site ships the Giorno theme only.
+  --crema: #18120f;
+  --carta: #261c17;
+  --bianco: #fffdf8;
+  --inchiostro: #f6ecdd;
+  --inchiostro-muted: #c4b4a3;
+  --filo: #3a2e27;
+  --rosso: #c1141e;
+  --vino: #5c0a10;
+  --rosso-text: #ff8e80;
+  --on-rosso: #fcf7ee;
+  --cielo: #2b4964;
+  --senape: #eab53e;
+  --on-senape: #1f1915;
+  --focus: #f6ecdd;
+  --shadow-cartolina: 0 14px 28px rgba(0, 0, 0, 0.45);
+*/

@@ -1,0 +1,359 @@
+{
+  "name": "Da Gherardo",
+  "version": 1,
+  "color": {
+    "themes": [
+      {
+        "id": "light",
+        "name": "Giorno"
+      },
+      {
+        "id": "dark",
+        "name": "Sera"
+      }
+    ],
+    "tokens": [
+      {
+        "name": "crema",
+        "value": {
+          "light": "#fcf7ee",
+          "dark": "#18120f"
+        },
+        "usage": "Page background. The cream of their paper placemats by day; the night sky over the piazza in the Sera theme."
+      },
+      {
+        "name": "carta",
+        "value": {
+          "light": "#f4ead8",
+          "dark": "#261c17"
+        },
+        "usage": "Paper panels: menu cards, the hours card, form fields, the text side of a split. Never a whole page."
+      },
+      {
+        "name": "bianco",
+        "value": {
+          "light": "#fffdf8",
+          "dark": "#fffdf8"
+        },
+        "usage": "The white border of a cartolina (postcard photo) and the light stripe of the tenda. Same in both themes, like a real postcard."
+      },
+      {
+        "name": "inchiostro",
+        "value": {
+          "light": "#1f1915",
+          "dark": "#f6ecdd"
+        },
+        "usage": "Headlines and body text on `crema` and `carta`. The black ink of the engraved logo."
+      },
+      {
+        "name": "inchiostro-muted",
+        "value": {
+          "light": "#62564c",
+          "dark": "#c4b4a3"
+        },
+        "usage": "Dish descriptions, captions, secondary lines on `crema` and `carta`."
+      },
+      {
+        "name": "filo",
+        "value": {
+          "light": "#e6d9c3",
+          "dark": "#3a2e27"
+        },
+        "usage": "Hairline dividers between menu items and sections. Never for controls."
+      },
+      {
+        "name": "rosso",
+        "value": {
+          "light": "#c1141e",
+          "dark": "#c1141e"
+        },
+        "usage": "Pomodoro red, the brand colour. Full-bleed hero and poster bands, the tenda stripes, the primary button, giant headline type on `crema`. Each page gets at least one big `rosso` moment."
+      },
+      {
+        "name": "vino",
+        "value": {
+          "light": "#7a0e16",
+          "dark": "#5c0a10"
+        },
+        "usage": "Deep wine red. One poster band per page at most, the footer, the menu page ground on dark. Text on it is `on-rosso`; small gold accents are `senape`."
+      },
+      {
+        "name": "rosso-text",
+        "value": {
+          "light": "#c1141e",
+          "dark": "#ff8e80"
+        },
+        "usage": "Red text and links on `crema` and `carta`: prices, the italic accent word, hover. 5.8:1 on `crema` (light), 8.3:1 (dark)."
+      },
+      {
+        "name": "on-rosso",
+        "value": {
+          "light": "#fcf7ee",
+          "dark": "#fcf7ee"
+        },
+        "usage": "Text, icons and focus rings on `rosso` and `vino` fills (5.8:1 on `rosso`)."
+      },
+      {
+        "name": "cielo",
+        "value": {
+          "light": "#bcd6ec",
+          "dark": "#2b4964"
+        },
+        "usage": "Summer sky blue. The holiday accent: one band or block per page (the Senza glutine section, the map, a postcard stamp). Text on it is `inchiostro`. `rosso` type on `cielo` only at 24px and larger (4.1:1)."
+      },
+      {
+        "name": "senape",
+        "value": {
+          "light": "#eab53e",
+          "dark": "#eab53e"
+        },
+        "usage": "Mustard, from their placemats and the sun on the piazza. Stamps, the francobollo, one small block on the cover, small labels on `vino`. Decorative: text on it is always the light-theme `inchiostro` #1f1915, never white."
+      },
+      {
+        "name": "on-senape",
+        "value": {
+          "light": "#1f1915",
+          "dark": "#1f1915"
+        },
+        "usage": "Text on `senape` and on `cielo` in the light theme (9.2:1 on senape)."
+      },
+      {
+        "name": "focus",
+        "value": {
+          "light": "#1f1915",
+          "dark": "#f6ecdd"
+        },
+        "usage": "Keyboard focus ring on `crema` and `carta`: 2px solid, 3px offset. On `rosso` and `vino` bands use `on-rosso` instead."
+      }
+    ]
+  },
+  "type": {
+    "fonts": [],
+    "families": {
+      "display": "\"Instrument Serif\", \"Bodoni 72\", Didot, Georgia, serif",
+      "label": "\"Antonio\", \"Oswald\", \"Arial Narrow\", sans-serif-condensed, sans-serif",
+      "sans": "\"Figtree\", \"Helvetica Neue\", Arial, sans-serif"
+    },
+    "groups": [
+      {
+        "name": "Display",
+        "family": "display",
+        "styles": [
+          {
+            "name": "display-poster",
+            "fontSize": "240px",
+            "lineHeight": 0.86,
+            "fontWeight": 400,
+            "letterSpacing": "-0.015em",
+            "sample": "Da Gherardo",
+            "usage": "Giant poster type, edge to edge, on a `rosso` ground (home hero) or in `rosso` on `crema`. clamp(96px, 17vw, 260px). Once per page."
+          },
+          {
+            "name": "display-xl",
+            "fontSize": "128px",
+            "lineHeight": 0.9,
+            "fontWeight": 400,
+            "letterSpacing": "-0.01em",
+            "sample": "Il menu",
+            "usage": "Page titles. clamp(64px, 10vw, 144px). Sentence case, one word may be italic."
+          },
+          {
+            "name": "display-l",
+            "fontSize": "72px",
+            "lineHeight": 0.96,
+            "fontWeight": 400,
+            "letterSpacing": "-0.005em",
+            "sample": "Tortelli e piazza",
+            "usage": "Section headlines, sentence case, at most one italic word in `rosso-text`. clamp(44px, 6vw, 84px)."
+          },
+          {
+            "name": "display-m",
+            "fontSize": "40px",
+            "lineHeight": 1.05,
+            "fontWeight": 400,
+            "sample": "Senza glutine",
+            "usage": "Card titles, postcard captions on big cards, the price of the moment."
+          },
+          {
+            "name": "display-italic",
+            "fontSize": "72px",
+            "lineHeight": 0.96,
+            "fontWeight": 400,
+            "fontStyle": "italic",
+            "sample": "in piazza",
+            "usage": "The italic accent word inside a headline, always in `rosso-text` on light grounds or `senape` on `vino`."
+          }
+        ]
+      },
+      {
+        "name": "Labels",
+        "family": "label",
+        "styles": [
+          {
+            "name": "label-l",
+            "fontSize": "30px",
+            "lineHeight": 1,
+            "fontWeight": 600,
+            "letterSpacing": "0.03em",
+            "sample": "PRIMI DI TERRA",
+            "usage": "Menu category titles, ticket headings, the big word on a stamp. Uppercase, in `rosso-text`."
+          },
+          {
+            "name": "eyebrow",
+            "fontSize": "15px",
+            "lineHeight": "18px",
+            "fontWeight": 600,
+            "letterSpacing": "0.14em",
+            "sample": "PIAZZA ANFITEATRO · LUCCA",
+            "usage": "Uppercase labels above headlines and in poster corners."
+          },
+          {
+            "name": "button",
+            "fontSize": "16px",
+            "lineHeight": "18px",
+            "fontWeight": 600,
+            "letterSpacing": "0.1em",
+            "sample": "PRENOTA UN TAVOLO",
+            "usage": "Buttons, nav links, menu tabs. Uppercase."
+          }
+        ]
+      },
+      {
+        "name": "Text",
+        "family": "sans",
+        "styles": [
+          {
+            "name": "lede",
+            "fontSize": "21px",
+            "lineHeight": "31px",
+            "fontWeight": 400,
+            "sample": "La trattoria tipica lucchese, in piazza Anfiteatro.",
+            "usage": "One or two intro sentences. Max 42 characters wide."
+          },
+          {
+            "name": "body",
+            "fontSize": "17px",
+            "lineHeight": "28px",
+            "fontWeight": 400,
+            "sample": "Tortelli lucchesi casalinghi al ragù, pici cacio e pepe, la zuppa toscana.",
+            "usage": "Running text. Max 62 characters wide."
+          },
+          {
+            "name": "menu-item",
+            "fontSize": "19px",
+            "lineHeight": "26px",
+            "fontWeight": 500,
+            "sample": "Tortelli lucchesi casalinghi al ragù",
+            "usage": "Dish names, wine names, list items."
+          },
+          {
+            "name": "price",
+            "fontSize": "18px",
+            "lineHeight": "26px",
+            "fontWeight": 600,
+            "sample": "15 €",
+            "usage": "Prices, with tabular numbers, in `rosso-text`. `15 €` in Italian, `€15` in English."
+          },
+          {
+            "name": "small",
+            "fontSize": "15px",
+            "lineHeight": "22px",
+            "fontWeight": 400,
+            "sample": "homemade tortelli from Lucca with meat sauce",
+            "usage": "Dish descriptions and captions in `inchiostro-muted`."
+          }
+        ]
+      }
+    ]
+  },
+  "spacing": {
+    "tokens": [
+      {
+        "name": "space-1",
+        "value": "4px",
+        "usage": "Icon to label."
+      },
+      {
+        "name": "space-2",
+        "value": "8px",
+        "usage": "Eyebrow to headline; dish name to description."
+      },
+      {
+        "name": "space-3",
+        "value": "16px",
+        "usage": "Between menu items; inside buttons (vertical); the mobile side gutter."
+      },
+      {
+        "name": "space-4",
+        "value": "24px",
+        "usage": "Headline to lede; between buttons; card padding; the tenda scallop width is 2 of these."
+      },
+      {
+        "name": "space-5",
+        "value": "40px",
+        "usage": "Lede to buttons or content; desktop column gap."
+      },
+      {
+        "name": "space-6",
+        "value": "64px",
+        "usage": "Section padding on mobile; desktop side gutter."
+      },
+      {
+        "name": "space-7",
+        "value": "104px",
+        "usage": "Section padding on desktop: clamp(56px, 9vh, 104px). Never more."
+      },
+      {
+        "name": "header-h",
+        "value": "76px",
+        "usage": "Fixed header height. Sections fit calc(100svh - header-h); anchors use it as scroll-margin-top."
+      },
+      {
+        "name": "tenda-h",
+        "value": "56px",
+        "usage": "Height of the tenda (awning) edge: 32px stripes plus 24px scallops."
+      },
+      {
+        "name": "measure",
+        "value": "62ch",
+        "usage": "Max width of running text."
+      }
+    ]
+  },
+  "radius": {
+    "tokens": [
+      {
+        "name": "radius-none",
+        "value": "0",
+        "usage": "Bands, poster blocks, menu frames, full-bleed photos."
+      },
+      {
+        "name": "radius-xs",
+        "value": "2px",
+        "usage": "Cartolina photos inside their white border, form fields, tabs."
+      },
+      {
+        "name": "radius-pill",
+        "value": "999px",
+        "usage": "Buttons and the language switch: round like a sun lounger cushion. The only round controls."
+      },
+      {
+        "name": "radius-ellisse",
+        "value": "50%",
+        "usage": "The ellisse: a photo cut to the oval of Piazza Anfiteatro, and round stamps."
+      }
+    ]
+  },
+  "shadow": {
+    "tokens": [
+      {
+        "name": "shadow-cartolina",
+        "value": {
+          "light": "0 14px 28px rgba(31, 25, 21, 0.18)",
+          "dark": "0 14px 28px rgba(0, 0, 0, 0.45)"
+        },
+        "usage": "Only on a cartolina (postcard photo), so it lifts off the page like a postcard on a table. Nothing else has a shadow."
+      }
+    ]
+  }
+}

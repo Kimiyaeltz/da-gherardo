@@ -1,0 +1,250 @@
+/* Da Gherardo menu, from dagherardo.com/menu (22 Oct 2026).
+   Item: [name, description IT, description EN, price, flags]
+   price: "15" | "5,50" | ["4,50", "hg"] | [["75 cl","16"],["37 cl","9"]]
+   flags: "f" = prodotto surgelato (frozen), "gf" = anche senza glutine */
+window.DG_MENU = [
+  { id: "antipasti", it: "Antipasti", en: "Starters", photo: "tagliere-salumi-formaggi",
+    introIt: "Senza glutine: + 1,50 € sul prezzo del menu.", introEn: "Gluten free: + €1.50 on the menu price.",
+    groups: [{ it: "Antipasti", en: "Starters", items: [
+      ["Bruschetta", "Pane tostato, pomodoro, aglio, basilico", "Toasted bread, tomato, garlic, basil", "5,50"],
+      ["Crostino alla pizzaiola", "Salsa di pomodoro piccante, mozzarella, origano", "Spicy tomato sauce, mozzarella, oregano", "6"],
+      ["Crostino toscano", "Salsa di fegatini di pollo", "Tuscan chicken liver pâté", "8"],
+      ["Crostino ai gamberetti", "Gamberetti e salsa rosa", "Prawns and cocktail sauce", "8", "f"],
+      ["Tagliere misto di salumi e formaggi", "Per due persone", "Cured meats and cheeses, for two", "20"],
+      ["Carpaccio di tonno al pepe indiano", "Con capperi e rucola", "Tuna carpaccio, Indian pepper, capers, rocket", "16"],
+      ["Carpaccio di Angus", "Rucola e parmigiano", "Angus beef, rocket, Parmesan", "16"],
+      ["Misto selvaggina", "Cinghiale, cervo, petto d'oca", "Wild boar, venison, goose breast", "20"],
+      ["Prosciutto e melone", "", "Parma ham with melon", "15"]
+    ]}, { it: "Insalatone", en: "Big salads", items: [
+      ["Insalata di mare calda", "Frutti di mare, olio, limone, rucola, aglio", "Warm seafood salad, oil, lemon, rocket, garlic", "16", "f"],
+      ["Insalata di pollo", "Pollo grigliato, sedano, carote, pomodoro, olive", "Grilled chicken, celery, carrots, tomato, olives", "13"],
+      ["Insalata nizzarda", "Lattuga, rucola, fagiolini, cipolla, tonno, uovo sodo, olive, acciughe", "Lettuce, rocket, green beans, onion, tuna, egg, olives, anchovies", "13"],
+      ["Insalata caprese", "Pomodoro, mozzarella, basilico", "Tomato, mozzarella, basil", "11"]
+    ]}]},
+  { id: "primi", it: "Primi", en: "Pasta", photo: "tortelli-lucchesi-al-ragu",
+    introIt: "Tagliatelle, lasagne, tortelli e cannelloni, con e senza glutine, sono di nostra produzione. Senza glutine: + 2,50 €.", introEn: "Tagliatelle, lasagne, tortelli and cannelloni, with and without gluten, are made in house. Gluten free: + €2.50.",
+    groups: [{ it: "Di stagione", en: "Seasonal", items: [
+      ["Tagliatelle ai funghi porcini freschi", "Con porcini freschi", "With fresh porcini mushrooms", "16"],
+      ["Tagliolini al tartufo bianco fresco", "Con tartufo bianco fresco", "With fresh white truffle", "25"],
+      ["Tagliatelle all'astice fresco", "Con astice fresco", "With fresh lobster", "25"],
+      ["Tagliatelle ai gamberi", "Gamberi e pomodorini", "Prawns and cherry tomatoes", "16"]
+    ]}, { it: "Primi di terra", en: "Pasta and soups", items: [
+      ["Tortelli lucchesi casalinghi al ragù", "Il classico di Lucca, fatto in casa", "Homemade tortelli from Lucca with meat sauce", "15"],
+      ["Tortelli ripieni di cinghiale", "Al ragù di cinghiale", "Filled with wild boar, with wild boar ragout", "18"],
+      ["Tagliatelle alla Gherardo", "Ragù e pesto genovese", "Meat sauce and Genoese pesto", "13"],
+      ["Tagliatelle all'amatriciana", "Guanciale, pomodoro, peperoncino, aglio, pecorino", "Bacon, tomato, chilli, garlic, pecorino", "13"],
+      ["Penne alla carbonara", "Uovo, pancetta, pepe, parmigiano", "Egg, bacon, pepper, Parmesan", "13"],
+      ["Lasagne", "Ragù, besciamella e pomodoro", "Meat sauce, béchamel and tomato", "12"],
+      ["Cannelloni", "Ricotta, spinaci, besciamella e pomodoro", "Ricotta, spinach, béchamel and tomato", "12"],
+      ["Risotto ai funghi porcini e asparagi", "", "Risotto with porcini and asparagus", "13"],
+      ["Spaghetti aglio, olio e peperoncino", "", "Spaghetti with garlic, oil and chilli", "13"],
+      ["Tagliatelle alla genovese", "Pesto: basilico, noci, mandorle, parmigiano, olio, aglio", "Pesto: basil, walnuts, almonds, Parmesan, oil, garlic", "13"],
+      ["Tagliatelle alla noce", "Con salsa di noci", "Walnut sauce", "13"],
+      ["Tagliatelle alla norcina", "Salsiccia, porro, profumo di tartufo", "Sausage, leek, a hint of truffle", "13"],
+      ["Pici cacio e pepe", "Pecorino romano e pepe", "Pecorino romano and pepper", "13"],
+      ["Fagottini al burro e salvia", "Ripieni di pera e formaggio", "Filled with pear and cheese, butter and sage", "13"],
+      ["Ravioli alla provola e speck", "In burro e salvia", "Provola cheese and speck, butter and sage", "13"],
+      ["Minestra di farro", "", "Spelt soup", "12"],
+      ["Zuppa toscana (ribollita)", "", "Tuscan bread and vegetable soup", "12"]
+    ]}, { it: "Primi di mare", en: "Seafood pasta", items: [
+      ["Spaghetti alle vongole", "Vongole, aglio, vino bianco", "Clams, garlic, white wine", "16", "f"],
+      ["Spaghetti allo scoglio", "Misto frutti di mare, aglio, vino bianco", "Mixed seafood, garlic, white wine", "16", "f"],
+      ["Ravioli di gamberi e pistacchi", "Pomodorini, aglio, vino bianco, curcuma", "Prawns and pistachio, cherry tomatoes, turmeric", "16", "f"],
+      ["Risotto ai frutti di mare", "Misto frutti di mare", "Mixed seafood risotto", "15", "f"]
+    ]}]},
+  { id: "secondi", it: "Secondi", en: "Mains", photo: "grigliata-mista-carne",
+    introIt: "Senza glutine: + 2,50 € su cotoletta e scaloppine.", introEn: "Gluten free: + €2.50 on cotoletta and scaloppine.",
+    groups: [{ it: "Secondi di terra", en: "Meat", items: [
+      ["Grigliata mista di carne", "Per due persone", "Mixed grilled meats, for two", "40"],
+      ["Fiorentina alla griglia", "Minimo 1 kg", "Grilled T-bone steak, minimum 1 kg", ["5", "hg"]],
+      ["Bistecca di manzo alla griglia", "", "Grilled beef steak", ["4,50", "hg"]],
+      ["Tagliata di manzo", "Con verdure grigliate", "Sliced beef with grilled vegetables", "24"],
+      ["Rovelline lucchesi", "Pomodoro, mozzarella, olive, capperi, acciughe, patate al forno", "Lucca-style beef slices in tomato sauce, roast potatoes", "18"],
+      ["Petto di pollo alla griglia", "Con verdure saltate", "Grilled chicken breast, sautéed vegetables", "16"],
+      ["Cotoletta alla milanese (manzo)", "Con patate fritte", "Beef Milanese cutlet with fries", "17"],
+      ["Scaloppine al vino bianco", "Con patate fritte", "Veal escalopes in white wine, fries", "17"],
+      ["Scaloppine al limone", "Con patate fritte", "Veal escalopes with lemon, fries", "17"],
+      ["Scaloppine ai funghi porcini", "", "Veal escalopes with porcini", "19"],
+      ["Filetto di cinta in salsa di noci", "Con patate al forno", "Cinta Senese pork fillet, walnut sauce, roast potatoes", "19"],
+      ["Stinco di maiale all'aceto balsamico", "Con patate al forno", "Pork shank in balsamic vinegar, roast potatoes", "19"]
+    ]}, { it: "Secondi di mare", en: "Fish", items: [
+      ["Grigliata mista di pesce", "Gamberoni, seppie, filetto di orata, pesce spada", "Prawns, cuttlefish, sea bream, swordfish", "19", "f"],
+      ["Fritto misto di pesce", "Con verdure fritte", "Mixed fried fish with fried vegetables", "18", "f"],
+      ["Filetto di branzino alla griglia", "Pesce fresco, con verdure saltate", "Fresh grilled sea bass, sautéed vegetables", "19"],
+      ["Salmone al pepe verde", "Pesce fresco, con patate al forno", "Fresh salmon, green pepper, roast potatoes", "19"],
+      ["Filetto di orata al cartoccio", "Pesce fresco, con verdure miste", "Fresh sea bream baked in paper, vegetables", "19"]
+    ]}, { it: "Contorni", en: "Sides", items: [
+      ["Patate fritte", "", "French fries", "5", "f"],
+      ["Patate al forno", "", "Roast potatoes", "5"],
+      ["Insalata mista", "", "Mixed salad", "5"],
+      ["Verdure alla griglia", "", "Grilled vegetables", "6"],
+      ["Verdure miste saltate", "", "Sautéed vegetables", "5"],
+      ["Spinaci al burro", "", "Spinach with butter", "5", "f"],
+      ["Fagioli cannellini all'olio", "", "Cannellini beans with olive oil", "5"],
+      ["Melanzane alla parmigiana", "", "Aubergine parmigiana", "11"]
+    ]}]},
+  { id: "pizze", it: "Pizze", en: "Pizza", photo: "pizza-bufala",
+    introIt: "Tutte le pizze sono di nostra produzione, a pranzo e a cena. Senza glutine: + 3 €.", introEn: "All our pizzas are made in house, lunch and dinner. Gluten free: + €3.",
+    groups: [{ it: "Pizze rosse", en: "Pizza with tomato", items: [
+      ["Margherita", "Pomodoro e mozzarella", "Tomato and mozzarella", "8"],
+      ["Napoli", "Pomodoro, mozzarella, capperi, acciughe", "Tomato, mozzarella, capers, anchovies", "10"],
+      ["Ai funghi", "Pomodoro, mozzarella, funghi", "Tomato, mozzarella, mushrooms", "10"],
+      ["Giuditta", "Pomodoro, mozzarella, rucola, bresaola, parmigiano", "Tomato, mozzarella, rocket, bresaola, Parmesan", "12"],
+      ["4 stagioni", "Funghi, carciofi, olive, salsiccia, prosciutto cotto", "Mushrooms, artichokes, olives, sausage, ham", "12"],
+      ["Funghi porcini e speck", "Pomodoro, mozzarella, porcini, speck", "Tomato, mozzarella, porcini, speck", "13"],
+      ["Funghi e prosciutto crudo", "Pomodoro, mozzarella, funghi, crudo", "Tomato, mozzarella, mushrooms, Parma ham", "12"],
+      ["Texana", "Peperoni, carciofi, salamino piccante, olive, crudo", "Peppers, artichokes, spicy salami, olives, Parma ham", "12"],
+      ["Parmigiana", "Mozzarella, parmigiano, prosciutto cotto, melanzane", "Mozzarella, Parmesan, ham, aubergine", "11"],
+      ["Tonno e cipolla", "Pomodoro, mozzarella, tonno, cipolla", "Tomato, mozzarella, tuna, onion", "12"],
+      ["Ai formaggi", "Pomodoro, mozzarella, crema ai formaggi", "Tomato, mozzarella, cheese cream", "11"],
+      ["Al mascarpone", "Mozzarella, prosciutto crudo, mascarpone", "Mozzarella, Parma ham, mascarpone", "11"],
+      ["Al salamino piccante", "Pomodoro, mozzarella, salamino piccante", "Tomato, mozzarella, spicy salami", "11"],
+      ["Al prosciutto cotto", "Pomodoro, mozzarella, prosciutto cotto", "Tomato, mozzarella, ham", "11"],
+      ["Agli asparagi", "Pomodoro, mozzarella, asparagi", "Tomato, mozzarella, asparagus", "11"],
+      ["Patate e wurstel", "Pomodoro, mozzarella, wurstel, patatine", "Tomato, mozzarella, frankfurter, fries", "11"],
+      ["Hawaii", "Pomodoro, mozzarella, ananas, prosciutto cotto", "Tomato, mozzarella, pineapple, ham", "12"],
+      ["Rustica", "Pomodoro, mozzarella, salsiccia, cipolla, mascarpone", "Tomato, mozzarella, sausage, onion, mascarpone", "12"],
+      ["Scogliera", "Pomodoro, prezzemolo, aglio, frutti di mare", "Tomato, parsley, garlic, seafood", "14"]
+    ]}, { it: "Pizze bianche", en: "White pizza", items: [
+      ["Caprese", "Mozzarella di bufala, pomodoro fresco, basilico", "Buffalo mozzarella, fresh tomato, basil", "13"],
+      ["Vegetariana", "Mozzarella, pomodoro fresco, funghi, carciofi, rucola", "Mozzarella, fresh tomato, mushrooms, artichokes, rocket", "11"],
+      ["Ortolana", "Mozzarella, melanzane, rucola", "Mozzarella, aubergine, rocket", "11"]
+    ]}, { it: "Calzoni", en: "Calzoni", items: [
+      ["Calzone all'olio", "Mozzarella, prosciutto cotto", "Mozzarella, ham", "11"],
+      ["Calzone farcito", "Mozzarella, olive, carciofi, prosciutto cotto", "Mozzarella, olives, artichokes, ham", "12"],
+      ["Calzone di mare", "Mozzarella, totani, gamberetti, muscoli, polpo", "Mozzarella, squid, prawns, mussels, octopus", "14", "f"]
+    ]}]},
+  { id: "dolci", it: "Dolci e caffè", en: "Desserts and coffee", photo: "tiramisu-caffe",
+    introIt: "I dolci con GF sono disponibili anche senza glutine.", introEn: "Desserts marked GF are also made gluten free.",
+    groups: [{ it: "Dolci", en: "Desserts", items: [
+      ["Tiramisù al vin santo e cantucci", "", "Tiramisù with vin santo and cantucci", "6,50"],
+      ["Coppa tiramisù al caffè della casa", "", "Our coffee tiramisù cup", "5,50", "gf"],
+      ["Panna cotta della casa", "", "Homemade panna cotta", "5,50", "gf"],
+      ["Crème brûlée", "", "Crème brûlée", "5,50", "gf"],
+      ["Torta pere e cioccolato", "", "Pear and chocolate cake", "6,50"],
+      ["Torta fichi e noci", "", "Fig and walnut cake", "6,50"],
+      ["Cheesecake", "", "Cheesecake", "5,50"],
+      ["Coppa esotica della casa", "Frutta esotica, crema della casa, caramello", "Exotic fruit, house cream, caramel", "5,50"],
+      ["Calice al cioccolato, all'amarena o al caffè", "", "Chocolate, black cherry or coffee cup", "5,50"],
+      ["Tartufo cacao o caffè", "", "Cocoa or coffee tartufo", "5,50"],
+      ["Gelato al limone o al cocco", "", "Lemon or coconut ice cream", "5,50"],
+      ["Sorbetto di limoncello", "", "Limoncello sorbet", "5,50"],
+      ["Macedonia di frutta fresca", "", "Fresh fruit salad", "6"],
+      ["Ananas o kiwi", "", "Pineapple or kiwi", "5,50"],
+      ["Fragole", "Solo d'estate", "Strawberries, summer only", "5,50"],
+      ["Melone", "Solo d'estate", "Melon, summer only", "4"]
+    ]}, { it: "Caffetteria", en: "Coffee and tea", items: [
+      ["Caffè, orzo o ginseng", "", "Espresso, barley or ginseng coffee", "2"],
+      ["Cappuccino", "", "Cappuccino", "3"],
+      ["Caffè con panna", "", "Coffee with cream", "3"],
+      ["Caffè corretto", "Rum, sambuca", "Espresso with rum or sambuca", "3,50"],
+      ["Caffellatte", "", "Caffè latte", "4"],
+      ["Tè o camomilla", "", "Tea or chamomile", "3"],
+      ["Cioccolata calda", "Con panna 4 €", "Hot chocolate, with cream €4", "3,50"],
+      ["Irish coffee", "", "Irish coffee", "6,50"]
+    ]}]},
+  { id: "vini", it: "Vini", en: "Wine", photo: null,
+    introIt: "I vini della casa e una selezione toscana e italiana.", introEn: "House wines and a Tuscan and Italian selection.",
+    groups: [{ it: "Vini rossi", en: "Red wine", items: [
+      ["Rosso toscano della casa", "", "House Tuscan red", [["1/2 l", "9"], ["75 cl", "14"]]],
+      ["Montecarlo Rosso Lucchese", "", "", [["75 cl", "16"], ["37 cl", "10"]]],
+      ["Urlo di Lupo Lucchese", "", "", [["75 cl", "18"]]],
+      ["Chianti", "", "", [["75 cl", "16"], ["37 cl", "9"]]],
+      ["Chianti Classico", "", "", [["75 cl", "22"], ["37 cl", "12"]]],
+      ["Santa Cristina Rosso", "", "", [["75 cl", "17"], ["37 cl", "10"]]],
+      ["Morellino di Scansano", "", "", [["75 cl", "18"], ["37 cl", "10"]]],
+      ["Rosso di Montalcino", "", "", [["75 cl", "24"], ["37 cl", "13"]]],
+      ["Brunello di Montalcino", "", "", [["75 cl", "48"], ["37 cl", "25"]]],
+      ["Bolgheri Poggio Roveto", "", "", [["75 cl", "28"]]],
+      ["Bolgheri Campo al Mare", "", "", [["37 cl", "40"]]],
+      ["Cantine Banfi", "", "", [["37 cl", "22"]]],
+      ["Col di Sasso", "", "", [["75 cl", "18"]]],
+      ["Cabernet", "", "", [["75 cl", "17"]]],
+      ["Merlot", "", "", [["75 cl", "17"]]],
+      ["Barbera", "", "", [["75 cl", "19"]]],
+      ["Dolcetto", "", "", [["75 cl", "19"]]]
+    ]}, { it: "Vini bianchi e rosati", en: "White and rosé", items: [
+      ["Bianco toscano della casa", "", "House Tuscan white", [["1/2 l", "9"], ["75 cl", "14"]]],
+      ["Montecarlo Bianco Lucchese", "", "", [["75 cl", "16"], ["37 cl", "9"]]],
+      ["Vernaccia", "", "", [["75 cl", "19"]]],
+      ["Greco di Tufo", "", "", [["75 cl", "22"]]],
+      ["Santa Cristina Bianco", "", "", [["75 cl", "18"]]],
+      ["Chardonnay", "", "", [["75 cl", "20"]]],
+      ["Sauvignon", "", "", [["75 cl", "18"]]],
+      ["Pinot Grigio", "", "", [["75 cl", "18"], ["37 cl", "12"]]],
+      ["Vermentino di Gallura", "", "", [["75 cl", "18"], ["37 cl", "10"]]],
+      ["Vermentino di Luni", "", "", [["75 cl", "18"], ["37 cl", "10"]]],
+      ["Pinot Grigio Collio", "", "", [["75 cl", "29"]]],
+      ["Sauvignon Collio", "", "", [["75 cl", "29"]]],
+      ["Centine Banfi", "", "", [["75 cl", "19"]]],
+      ["Stregato dalla Luna (Lunae) frizzante", "", "", [["75 cl", "18"]]],
+      ["Rosé", "", "", [["75 cl", "22"], ["35 cl", "12"]]]
+    ]}, { it: "Bollicine", en: "Sparkling", items: [
+      ["Prosecco DOC", "", "", [["75 cl", "30"], ["37 cl", "16"]]],
+      ["Spumante dolce o secco", "", "Sweet or dry sparkling", [["75 cl", "30"]]],
+      ["Berlucchi Champenois", "", "", [["75 cl", "45"]]],
+      ["Champagne Veuve Clicquot", "", "", [["75 cl", "110"]]]
+    ]}]},
+  { id: "bar", it: "Bar e cocktail", en: "Bar and cocktails", photo: "aperitivo-in-piazza",
+    introIt: "Per l'aperitivo in piazza, la mattina o nel tardo pomeriggio.", introEn: "For an aperitivo in the piazza, in the morning or late afternoon.",
+    groups: [{ it: "Aperitivo e bibite", en: "Aperitivo and soft drinks", items: [
+      ["Aperol Spritz", "", "", "6"],
+      ["Aperitivo della casa", "", "House aperitivo", "5"],
+      ["Coppetta di prosecco", "", "Glass of prosecco", "5"],
+      ["Sangria", "", "", "5"],
+      ["Analcolici", "", "Alcohol-free aperitivo", "4,50"],
+      ["Spremute", "Arancia o limone", "Fresh orange or lemon juice", "6"],
+      ["Succhi di frutta", "Pera, ACE, pesca, albicocca, mela, tropicale, arancia, ananas", "Pear, ACE, peach, apricot, apple, tropical, orange, pineapple", "4"],
+      ["Bibite", "Fanta, Sprite, Coca-Cola, Lemonsoda, tonica", "Fanta, Sprite, Coca-Cola, Lemonsoda, tonic", "4"],
+      ["Sciroppi", "Fragola, menta, amarena", "Strawberry, mint, black cherry syrup", "4,50"],
+      ["Acqua minerale", "50 cl 2 €, 1 l 3,50 €", "50 cl €2, 1 l €3.50", "2"]
+    ]}, { it: "Cocktail", en: "Cocktails", items: [
+      ["Negroni", "Martini rosso, bitter Campari, gin", "Martini rosso, Campari, gin", "7"],
+      ["Gin tonic", "Gin Tanqueray, acqua tonica", "Tanqueray gin, tonic water", "7"],
+      ["Mojito", "Menta, Bacardi e soda", "Mint, Bacardi, soda", "7"],
+      ["Caipirinha", "Limone, zucchero di canna, cachaça", "Lime, cane sugar, cachaça", "7"],
+      ["Bellini", "Succo di pesca, spumante secco", "Peach juice, dry sparkling wine", "7"],
+      ["Bloody Mary", "Succo di pomodoro, vodka, angostura, sale", "Tomato juice, vodka, Angostura, salt", "7"],
+      ["Manhattan", "Martini rosso, whisky, angostura", "Martini rosso, whisky, Angostura", "7"],
+      ["Martini dry", "Gin, Martini dry, limone", "Gin, dry Martini, lemon", "7"],
+      ["Gin fizz", "Gin, limone, zucchero", "Gin, lemon, sugar", "7"],
+      ["White Lady", "Gin, limone, Cointreau", "Gin, lemon, Cointreau", "7"],
+      ["Mai Tai", "Granatina, Bacardi, succo d'ananas", "Grenadine, Bacardi, pineapple juice", "7"],
+      ["Cuba libre", "Rum, Coca-Cola", "Rum, Coca-Cola", "7"],
+      ["Bacardi cocktail", "Rum Bacardi, limone, granatina", "Bacardi rum, lemon, grenadine", "7"],
+      ["Beautiful", "Grand Marnier, Cointreau, vodka alla pesca", "Grand Marnier, Cointreau, peach vodka", "7"],
+      ["Cangaceiro", "Crema di cacao, crema di latte, cognac, fragola", "Cacao cream, milk cream, cognac, strawberry", "7"],
+      ["Alexander", "Crema di cacao, crema di latte, cognac", "Cacao cream, milk cream, cognac", "7"],
+      ["Cocktail di frutta", "Alcolico o analcolico", "Fruit cocktail, with or without alcohol", "7"]
+    ]}, { it: "Birre", en: "Beer", items: [
+      ["Birra alla spina bionda o rossa", "Piccola 20 cl 4 €, media 40 cl 6 €, grande 1 l 12 €", "Draught, blonde or red: small 20 cl €4, medium 40 cl €6, large 1 l €12", "4"],
+      ["Birre in bottiglia 33 cl", "Beck's, Ceres, Chimay, Corona, Moretti, Moretti analcolica, Leffe chiara, Leffe rossa", "Beck's, Ceres, Chimay, Corona, Moretti, Moretti alcohol-free, Leffe blonde, Leffe red", "6"],
+      ["Paulaner Weisse 50 cl", "", "", "8"],
+      ["Birre senza glutine 33 cl", "Daura, Porretti", "Gluten-free beer: Daura, Porretti", "6"]
+    ]}, { it: "Whisky e distillati", en: "Whisky and spirits", items: [
+      ["Liquori e amari", "", "Liqueurs and amari", "3,50"],
+      ["Ballantine's, J&B, Glen Grant, Johnnie Walker, Four Roses, Canadian Club", "", "", "4,50"],
+      ["Laphroaig, Glenlivet, Jack Daniel's, Chivas Regal", "", "", "6,50"],
+      ["Oban 14, Lagavulin 16, Talisker 10, Dalwhinnie 15, Glenkinchie 10", "", "", "8"],
+      ["Bas Armagnac, Courvoisier, Rémy Martin, Calvados", "", "", "6,50"],
+      ["Grappa di moscato, riserva o Nardini", "", "", "4"],
+      ["Grappa di barrique o Nonino", "", "", "5"],
+      ["Grappa di Brunello", "", "", "6,50"]
+    ]}]},
+  { id: "senza-glutine", it: "Senza glutine", en: "Gluten free", photo: "pizza-giuditta-senza-glutine",
+    introIt: "Pane, pasta e impasti per la pizza dal nostro laboratorio senza glutine, certificato AIC. Prezzo del menu più il supplemento.", introEn: "Bread, pasta and pizza dough from our AIC-certified gluten-free kitchen. Menu price plus a supplement.",
+    groups: [{ it: "Menù senza glutine", en: "Gluten-free menu", items: [
+      ["Antipasti e crostini", "", "Starters and crostini", "+ 1,50"],
+      ["Tortelli lucchesi al ragù", "", "Tortelli from Lucca with meat sauce", "+ 2,50"],
+      ["Tortelli al cinghiale", "", "Wild boar tortelli", "+ 2,50"],
+      ["Lasagne", "", "Lasagne", "+ 2,50"],
+      ["Cannelloni ricotta e spinaci", "", "Ricotta and spinach cannelloni", "+ 2,50"],
+      ["Tagliatelle con le salse del menu", "", "Tagliatelle with any sauce on the menu", "+ 2,50"],
+      ["Tagliolini con le salse del menu", "", "Tagliolini with any sauce on the menu", "+ 2,50"],
+      ["Cotoletta alla milanese (manzo)", "Con patate fritte", "Beef Milanese cutlet with fries", "+ 2,50"],
+      ["Scaloppine, tutti i tipi", "Carne di vitello", "Veal escalopes, every kind", "+ 2,50"],
+      ["Tutte le pizze", "", "Every pizza", "+ 3"],
+      ["Dolci GF", "Coppa tiramisù, panna cotta, crème brûlée", "Tiramisù cup, panna cotta, crème brûlée", "5,50"],
+      ["Birre senza glutine", "Daura, Porretti", "Daura, Porretti", "6"]
+    ]}]}
+];
